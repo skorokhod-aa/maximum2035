@@ -30,8 +30,10 @@ s = 'aab'
 syms_counter = {}
 for sym in s:
     syms_counter[sym] = syms_counter.get(sym, 0) + 1
-
+    print('hello!')
 print(syms_counter)
+
+print('hi!!!!!')
 
 # Итераций: 3
 # O(N) = N
