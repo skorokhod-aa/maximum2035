@@ -1,42 +1,13 @@
 
 
-# s = 'aaabca'
-# a: 4, b: 1, c: 1
 
-# s = 'aabc'
-# for sym in s:
-#     count = 0
-#     for sub_sym in s:
-#         if sub_sym == sym:
-#             count+=1
-#     print(sym, count)
+def func(c):
+    if c == c[::-1]: # -1 здесь шаг строки: от конца к началу
+        return True
+    else:
+        return False
 
-# Итераций: 4
-# O(N) = N**2
-
-
-# s = 'aab'
-# for sym in set(s):
-#     count = 0
-#     for sub_sym in s:
-#         if sub_sym == sym:
-#             count+=1
-#     print(sym, count)
-
-# Итераций: 6
-# O(N) = M * N = N ** 2
-
-s = 'aab'
-syms_counter = {}
-for sym in s:
-    syms_counter[sym] = syms_counter.get(sym, 0) + 1
-    print('hello!')
-print(syms_counter)
-
-print('hi!!!!!')
-
-# Итераций: 3
-# O(N) = N
+print(func('шалаш'))
 
 
 
@@ -50,6 +21,4 @@ print('hi!!!!!')
 
 
 
-
-# print(set('aaaaaabccc'))
 
